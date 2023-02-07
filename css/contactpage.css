@@ -1,0 +1,122 @@
+/* Code in this file has been written by George Humberstone for his contact page*/
+/*Colours from design document*/
+:root{
+    --myRed:#e63946;
+    --myMiddleBlue: #457B9D;
+    --myDarkBlue:#1D3557;
+    --myLightBlue:#A8DADC;
+    --myhoneydew: #f1faee;
+}
+
+/* content width on mobile device*/
+main {
+    width:98%;
+    margin:0em auto 0em auto;
+}
+h2{
+    width:70%;
+    margin:0em auto 0.5em auto;
+    color:var(--myhoneydew);
+}
+h3{
+    width:70%;
+    margin: 0em auto 0em auto;
+    color:var(--myhoneydew);
+}
+
+p{
+    width:70%;
+    margin: 0em auto 0.2em auto;
+    color:var(--myhoneydew);
+    text-align:left
+    
+}
+#follow-me{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+a{
+    color:var(--myhoneydew);
+}
+form{
+    margin:0em auto 1em auto;
+    padding:0.5em;
+    /*Rounds off my form to look neat*/
+    border-radius:10px;
+    width:90%;
+    background-color: var(--myLightBlue);
+}
+/*header in the form*/
+h4{
+    background-color:white;
+    text-align:center;
+    color:var(--myDarkBlue);
+    font-size: 2em;
+}
+form p{
+    width:100%;
+    color:var(--myDarkBlue);
+    text-align:center;
+    font-size: 1.2em;
+   
+}
+/*Both input text fields are red as they are invalid initially*/
+#email,textarea{
+    background-color: var(--myRed);
+    color:white;
+}
+
+
+/*When valid text fields will go green*/
+#email:valid ,textarea:valid{
+    background-color: green;
+}
+/*shadow over fields when hovering on them*/
+#email:hover,textarea:hover{
+    box-shadow:1px 1px black;
+}
+/*The submit button of the form*/
+#submit{
+    background-color: black;
+    color:white;
+    padding:5px;
+}
+#submit:hover{
+    box-shadow:2px 2px var(--myDarkBlue);
+
+}
+/*tweak point because its a form and I want it to keep looking good at every width*/
+@media screen and (min-width: 600px){
+    main{
+        width:90%;
+    }
+    form{
+        width:80%
+    }
+}
+@media screen and (min-width: 850px){
+    /*Moves content more central here , a break point*/
+    main{
+        width:70%;
+    }
+    form{
+        width:60%;
+    }
+    p{
+        font-size:1em;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    main{
+        width:60%
+    }
+    form{
+     width:50%;
+    }
+    
+
+}
+
+

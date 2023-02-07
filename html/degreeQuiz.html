@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+	<meta charset="utf-8">
+	<title>Degree Quiz</title>
+	<meta name="author" content="George Humberstone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking in style sheets-->
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body id="wrapper">
+  <header  ><!--Logo and navigation in the header-->
+    <!--Figure as its not an inline element where as img on its own is inline, so easier to position picture
+    No caption as its main logo and no alt as purely decorative.-->
+    <figure id="logo"><img src="../images/logo1.jpg" alt="The website logo which includes a picture of George Humberstone with his name" ></figure> 
+    <!-- use nav as it is HTML5 semantic element and I am writing code for navigation of my site here-->
+    <nav id="navigation" class="dropdown">
+      <button  id="touchit" class="my-drop-button " type="button">  &#9776; </button>
+      <ul id="my-dropdown" class="menu-content">
+        <!--My menu links to other pages-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="degreeProgram.html">Degree programme</a></li>
+        <li><a href=degreeQuiz.html >Degree quiz</a></li>
+        <li><a href="myWeek.html">My Week</a></li>
+        <li><a href="contactPage.html">Contact Me</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <script src="../javascript/nav.js"></script>
+      <!--This script is for the menu button so dropdown is displayed I did not want to have to use javascript here, 
+      please see css template for more details-->
+    </nav>
+      
+      
+  </header>
+
+  <h1>My Quiz</h1>
+  
+  <!-- The main section of my site comes after the heading -->
+  <main >
+    <!--Page Overview here-->
+    <p id="question-explanation">
+      Hello and welcome to my quiz! On this page is a set of questions related to the modules that I study in year one of my Computer Science 
+      degree. Select your answer and when you are happy with your selection, check to see if you got it correct. Have fun and don't forget to
+      turn the meeting upside-down.
+      
+    </p>
+    <!--A repeat of majority of code really for all the questions-->
+    <h2>Question 1</h2>
+    <p class="questions">What module on my course does the picture below relate to? (To turn the meeting upside down hover on image)</p>
+    
+    <figure class="question-image">
+      <img src="../images/question1.jpg" alt="Picture of a meeting" id="question1image"> <!--id used for advanced css effect-->
+      <figcaption> A meeting</figcaption>
+    </figure>
+    
+  <!--Used a div so I could group all the radio buttons, the check button and display the correct answer together-->
+    <div  class="answers">
+      <!--Used radio buttons for user answer selection as only one can be selected from the group of buttons with the same name tag-->
+      <label><input type="radio" id="COM1001Q1" name="questionone" checked value="COM1001" >   A) COM 1001</label><br>
+      <label> <input type="radio"  name="questionone" value="COM1005">   B) COM 1005</label><br>
+      <label><input type="radio"  name="questionone" value="COM1006">   C) COM 1006</label><br>
+      <p id="q1-answer-show">Are you correct?</p> <!--Text that will change to tell user if they are correct through the use of javascript.-->
+      <button id="check-one" class="check-button">Check answer</button>
+    </div>
+
+    <h2>Question 2</h2>
+    <p class="questions">What module on my course does the picture below relate to? (Hover over the image to see notes better)</p>
+    <figure id="question2image" class="question-image">
+      <img src="../images/question2.jpg" alt="Picture of a section of notes on set theory.">
+      <figcaption> A section of my notes</figcaption>
+    </figure>
+    <div  class="answers">
+      <label><input type="radio"  name="questiontwo" checked value="COM1005" >   A) COM 1005</label><br>
+      <label> <input type="radio" id="COM1002Q2" name="questiontwo" value="COM1002">   B) COM 1002</label><br>
+      <label><input type="radio"  name="questiontwo" value="COM1008">   C) COM 1008</label><br>
+      <p id="q2-answer-show">Are you correct?</p>
+      <button id="check-two" class="check-button">Check answer</button>
+    </div>
+
+    <h2>Question 3</h2>
+    <p class="questions">What module on my course does the picture below relate to?</p>
+    <figure class="question-image">
+      <img src="../images/question3.jpg" alt="Picture of some robotic programming commands.">
+      <figcaption> Some python code</figcaption>
+    </figure>
+    <div  class="answers">
+      <label><input type="radio"  name="questionthree" checked value="COM1003" >   A) COM 1003</label><br>
+      <label> <input type="radio" id="COM1005Q3" name="questionthree" value="COM1005">   B) COM 1005</label><br>
+      <label><input type="radio" name="questionthree" value="COM1006">   C) COM 1006</label><br>
+      <p id="q3-answer-show">Are you correct?</p>
+      <button id="check-three" class="check-button">Check answer</button>
+    </div>
+    <script src="../javascript/question.js"></script>
+  </main>
+
+	<footer>
+    <p>&copy; George Humberstone 2020</p>
+  </footer>
+  
+</body>
+</html>

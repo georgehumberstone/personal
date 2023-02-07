@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<meta name="author" content="George Humberstone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking in style sheets-->
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/contactpage.css">
+</head>
+<body id="wrapper">
+  <header  ><!--Logo and navigation in the header-->
+    <!--Figure as its not an inline element where as img on its own is inline, so easier to position picture
+    No caption as its main logo and no alt as purely decorative.-->
+    <figure id="logo"><img src="../images/logo1.jpg" alt="The website logo which includes a picture of George Humberstone with his name" ></figure> 
+    <!-- use nav as it is HTML5 semantic element and I am writing code for navigation of my site here-->
+    <nav id="navigation" class="dropdown">
+      <button  id="touchit" class="my-drop-button " type="button">  &#9776; </button>
+      <ul id="my-dropdown" class="menu-content">
+        <!--My menu links to other pages-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="degreeProgram.html">Degree programme</a></li>
+        <li><a href=degreeQuiz.html >Degree quiz</a></li>
+        <li><a href="myWeek.html">My Week</a></li>
+        <li><a href="contactPage.html">Contact Me</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <script src="../javascript/nav.js"></script>
+      <!--This script is for the menu button so dropdown is displayed I did not want to have to use javascript here, 
+      please see css template for more details-->
+    </nav>
+      
+      
+  </header>
+
+  <h1>Contact Me</h1>
+  
+  <!-- The main section of my site comes after the heading -->
+  <main>
+    <!--"u" underlines the text and "b" makes it bold so I make titles both underlined and bold.-->
+    
+    <h2 ><u><b>My contact details are:</b></u></h2>
+    <h3 ><u> <b>You can post a letter to the following address:</b></u></h3>
+    <p>Department of Computer Science</p>
+    <p>The University of Sheffield </p>
+    <p>Regent Court</p>
+    <p>211 Portobello</p> 
+    <p>Sheffield</p> 
+    <p>S1 4DP</p> 
+    <p>UK</p> 
+    <h3 id="follow-me"><u><a id="linked-in" href=https://www.linkedin.com/in/george-humberstone-46485b201>Follow me on linkedIn</a></u></h3>
+    <h2><u><b>Alternatively you can send me an Email using the form below:</b></u></h2>
+    <!--Form here. Form is a semantic element to use with forms... When submit if input fields are valid it will send me an email
+      The method POST here deals with an update to an email database eg my email address.-->
+    <form name="myform" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" method="POST">
+      <h4><u><b>Comments?</b></u></h4>
+      <input type="hidden" name="recipients" value="gphumberstone1@sheffield.ac.uk">
+      <p>
+        <label for="email">Your E-mail Address:</label>
+        <!--The type "email" here will do some verification for an @ symbol and give quick access to mobile users the symbol on there 
+        keyboard. The placeholder gives some faint text to show where user should type.-->
+        <input type="email" name="email" id="email" placeholder="Type your Email here..." maxlength="40" size="30" required><br>
+        <br>
+        <label for="comment" >Your Comment or Query:</label><br>
+        <textarea name="comment" rows="5" cols="30" required placeholder="Your Comment goes here..."></textarea>
+        <br>
+        <!--type is submit as it submits the form if input fields are valid-->
+        <input type="submit" value="Submit" name="submit" id="submit">
+      </p>
+    </form>
+    
+      
+      
+     
+
+    
+  </main>
+
+	<footer>
+    <p>&copy; George Humberstone 2020</p>
+  </footer>
+  
+</body>
+</html>

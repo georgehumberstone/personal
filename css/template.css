@@ -1,0 +1,178 @@
+/* This code has been wriiten by George Humberstone with Mobile First in mind*/
+/* My colours from the design which are to be used throughout my website*/
+:root{
+    --myRed:#e63946;
+    --myMiddleBlue: #457B9D;
+    --myDarkBlue:#1D3557;
+    --myLightBlue:#A8DADC;
+    --myhoneydew: #f1faee;
+
+    
+}
+#wrapper{
+	width: 100%;
+	margin: 0%;
+    padding:0%;
+    background-color: var(--myDarkBlue);
+}
+
+header{
+  background-color:var(--myRed);
+  width:100%;
+  padding: 0% 0% 0.5% 0%; /* adds some extra padding to allow image to stay in header*/
+}
+/* making sure my logo stays a certain size and floats to the right of the header*/
+#logo{
+    display: block;
+    width:210px;
+	border: 0ch;
+	margin: 0%;
+    padding: 0%;
+    float: right;
+    text-align: right; 	
+}
+
+#logo img {
+  width:90%;
+}
+/*makes sure the navigation links do not cover full width of page*/
+#navigation {
+    display: inline-block;
+}
+/* code here for drop down menu and button is partly inpired by https://www.w3schools.com/howto/howto_js_dropdown.asp((W3Schools cop. 1999-2020) 
+and desktop menu partly inspired by https://responsivenavigation.net/examples/simple-toggle (Erick Arbe cop. 2018) */
+.my-drop-button {
+    display:block;   
+    background-color:var(--myMiddleBlue);
+    color:var(--myhoneydew);
+    padding: 3.0em;
+    margin: 0em;
+    border: 1px;
+    border-color: black;
+    
+}
+
+/* Dropdown button on focus */
+.my-drop-button :focus {
+    background-color:black;
+}
+.my-drop-button:hover~#my-dropdown{
+    display: block;
+    transition: 0s 90s;
+}
+/*not so sure why this won't allow me to navigate to other pages instead of using javascript
+.my-drop-button:focus-within~#my-dropdown{
+    display: block;
+    
+}*/
+
+/* the menu links are not shown until user touches/clicks on menu button hence display is none*/
+.menu-content {
+    display: none;
+    background-color:var(--myhoneydew);
+    min-width: 100px;
+    max-width: 110px;
+    list-style: none;
+    font-weight: bold
+}
+
+/* Links inside the dropdown */
+.menu-content li a {
+    color: var(--myRed);
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    
+    
+}
+
+/* Change color of menu links when hovering*/
+.menu-content li:hover {background-color:var(--myMiddleBlue)}
+
+/* Show the dropdown menu */
+.show-dropdown {display:block;}
+/* my footer will cover the whole width on mobile/narrow tablet devices*/
+/* This header 1 element is going to appear on every page so it is in the template*/
+h1{
+    width: 6em;
+    background-color:var(--myLightBlue);
+    text-align: center;
+    margin: 0.2em auto 0.5em auto;
+    color:var(--myRed);
+    font-size: 4.0em;
+    
+    
+}
+footer {
+	width:100%;
+}
+footer p {
+  width: 100%;
+  background-color:var(--myLightBlue);
+  font-size:0.8rem;
+  text-align:center;
+  color:var(--myRed);
+}
+
+
+
+@media screen and (min-width: 500px) {
+  footer p {
+    font-size:0.9rem;
+  }
+  
+}
+  
+@media screen and (min-width: 850px){
+   /* Makes the logo go central*/
+   #logo{
+	width:25%;
+    float: none;
+	margin-left: auto;
+	margin-right: auto;
+    }
+   
+   .my-drop-button {display:none;} /* Removes button from display*/
+   #my-dropdown{display:block;} /* displays the links*/
+   /* makes naviagtion bar cover full width of screen */
+   #navigation{
+       display:block;
+       width:100%;
+       background-color: var(--myMiddleBlue);
+       
+       
+    
+    }
+   /*code here is partly inspired by https://responsivenavigation.net/examples/simple-toggle */
+   /* added code below so that the navigation links appear in a line again*/
+   .menu-content {
+    
+    max-width: none;
+    
+    }
+    /* change colour of background of links*/
+   ul.menu-content{ 
+       background-color:var(--myMiddleBlue);
+       padding: 0px;
+       margin: 0px;
+       text-align: center;
+       
+    }
+    /*shows the links all in a horizontal line*/
+   ul.menu-content li {
+       display: inline-block;
+       text-align: left; 
+    }
+    /* makes links appear central and changes text colour of links*/
+   ul.menu-content li a {
+       display: block;
+       padding: 1.5rem;
+       color:var(--myhoneydew);
+    }
+    /* makes text colour and its background change when hovering on a link*/
+    ul.menu-content li a:hover{
+        color:var(--myRed);
+        background-color:var(--myhoneydew) ;
+    }
+   
+}

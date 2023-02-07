@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+	<meta charset="utf-8">
+	<title>Accessibility Statement</title>
+	<meta name="author" content="George Humberstone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking in style sheets-->
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/accessibility.css">
+</head>
+<body id="wrapper">
+  <header  ><!--Logo and navigation in the header-->
+    <!--Figure as its not an inline element where as img on its own is inline, so easier to position picture
+    No caption as its main logo and no alt as purely decorative.-->
+    <figure id="logo"><img src="../images/logo1.jpg" alt="The website logo which includes a picture of George Humberstone with his name" ></figure> 
+    <!-- use nav as it is HTML5 semantic element and I am writing code for navigation of my site here-->
+    <nav id="navigation" class="dropdown">
+      <button  id="touchit" class="my-drop-button " type="button">  &#9776; </button>
+      <ul id="my-dropdown" class="menu-content">
+        <!--My menu links to other pages-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="degreeProgram.html">Degree programme</a></li>
+        <li><a href=degreeQuiz.html >Degree quiz</a></li>
+        <li><a href="myWeek.html">My Week</a></li>
+        <li><a href="contactPage.html">Contact Me</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <script src="../javascript/nav.js"></script>
+      <!--This script is for the menu button so dropdown is displayed I did not want to have to use javascript here, 
+      please see css in template file for more details-->
+    </nav>
+      
+      
+  </header>
+
+  <h1 id="accessibility-header">Accessibility</h1>
+  
+  <!-- The main section of my site comes after the heading -->
+  <main>
+    <h2> I want everyone to be able to read and understand the content of my website. </h2>
+    <h3><u>How accessible is my website?</u></h3>
+    <h4>Plugins suggested used at your own risk. I am not responsible for any  issues you may have from additional plugins.</h4>
+    <h4><u>Images on my site</u></h4>
+    <!--Use ul instead of ol as the points I am making are general and not ordered for each of the titles.-->
+    <ul>
+      <li> All images that add more information and are important on some pages have an alt included. This is particularly 
+        important on the quiz and degree programme page. But not so much for the logo as it is purely decorative so this needs changing in the future. It will allow visually impaired 
+        users to use screen reader plugins to access a description of my photo and add context to the module descriptions and questions.
+        It also allows image to be converted to braille or large print if it is needed in this format.
+      </li>
+      
+    </ul>
+    <h4><u>Text Content</u></h4>
+    <ul>
+      <li>All my text content provided in the main section of my pages can be read out by "read aloud" features such as what can be found 
+        on microsoft edge.
+      </li>
+      <li>Font size of text on my pages can be altered by the visitor using zoom magnification in browser settings for both mobile and desktop sites.</li>
+      <li>If the visitor is not happy with the text colour as this has been identified as a problem in testing, then they 
+        could use HighContrast which can be found on the chrome web store.
+      </li> 
+      <li>Text content on all pages follows a logical and linear layout for both mobile and desktop.</li>
+      <li>Although not a problem, changing font style may help accessibility and this is something for me to look at as an update to the site.</li>
+      
+
+    </ul>
+    <h4><u>Navigation</u></h4>
+    <ul>
+      <li>All my navigation links are accessible through the use of only a keyboard. The tab being focused on is very clear when using a keybaord</li>
+      <li>The structure of my navigation is logical and linear, allowing the user to quickly get to another page of my website.</li>
+      <li>All buttons have context.</li>
+    </ul>
+    <h4><u>My content is understandable</u></h4>
+    <ul>
+      <li>It helps user avoid and correct mistakes such as validation on the form I provide on the contact page.</li>
+      <li>All content is in logical order and it operates in a predictable way such as the quiz page. (Answers follow the question)</li>
+    </ul>
+    <h3><u>How I tested the accessibility of my website?</u></h3>
+    <ul>
+      <li>I used the Google Chrome Lighthouse to quickly audit my pages for both the mobile and desktop views. Overall results were very good
+        with the majority of pages receiving a score of 90+.
+      </li>
+      <li>I manually tested some features such as using the microsoft edge "read aloud" tool and using my keyboard to navigate the site.</li>
+    </ul>
+    <h3>If you have a problem with the accessibility of this site and would like to send me feedback. Please use the form I have 
+      provided on the <a href="contactPage.html">Contact Page</a>.
+    </h3>
+  </main>
+
+	<footer>
+    <p>&copy; George Humberstone 2020</p>
+  </footer>
+  
+</body>
+</html>

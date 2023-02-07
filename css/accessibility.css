@@ -1,0 +1,55 @@
+/*This css file has been written by George Humberstone*/
+/*colour from design*/
+:root{
+  --myhoneydew: #f1faee;
+}
+/*larger font size for mobile devices*/
+main{
+  width:95%;
+  font-size: 1.2em;
+  margin: 0em auto 0em auto;
+}
+/*consistent colour , matches design*/
+h2{
+  color:var(--myhoneydew);
+}
+
+h3{
+  color:var(--myhoneydew);
+}
+
+h4{
+  color:var(--myhoneydew);
+}
+
+ul{
+  color: var(--myhoneydew);
+}
+
+a{
+  color: var(--myhoneydew);
+}
+
+
+@media screen and (min-width: 850px){
+    /*Moves content more central here */
+  main{
+    width:85%;
+  } 
+    
+}
+
+@media screen and (min-width: 1000px){/*tweak a little*/
+    
+  main{
+    font-size:1em;
+  }
+}
+
+/* A break point as moved to width of a large landscape tablet*/
+@media screen and (min-width: 1200px){
+  main{
+    width:68%;
+  }   
+    
+}

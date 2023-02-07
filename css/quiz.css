@@ -1,0 +1,133 @@
+/*This code has been written by George Humberstone*/
+/*these are my colours from the colour palette I chose when designing my website*/
+:root{
+    --myRed:#e63946;
+    --myMiddleBlue: #457B9D;
+    --myDarkBlue:#1D3557;
+    --myLightBlue:#A8DADC;
+    --myhoneydew: #f1faee;
+}
+
+main{
+    width:98%;
+    margin:0em auto 0em auto;
+}
+#question-explanation{
+    background-color:var(--myhoneydew);
+    color:var(--myRed);
+    padding:1em;
+    font-size: 1.3em;
+
+}
+h2{
+    width:4.6em;
+    background-color:var(--myRed) ;
+    color:var(--myhoneydew);
+    margin:0em auto 0em auto;
+    font-size: 2.5em;
+    padding:0.2em 0.5em 0.2em 0.5em;
+    /*To round off the edges of its border*/
+    border-radius: 0.2em;
+    text-align: center;
+
+}
+.questions{
+    color:var(--myhoneydew);
+    background-color: var(--myMiddleBlue);
+    width:70%;
+    padding:1em;
+    margin:1em auto 0em auto;
+    text-align: center;
+    font-size: 1.3em;
+    /*curves the top corners of my question backgrounds*/
+    border-top-left-radius:2em;
+    border-top-right-radius:2em;
+}
+.question-image{
+    width:95%;
+    text-align: center;
+    margin: 2em auto 0px auto;
+    color:var(--myhoneydew)
+}
+.question-image img{
+    max-width:100% ;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    /*curve images edges*/
+    border-radius: 5px;
+}
+/*Tilts the question one image 180 degrees when hovering*/
+#question1image:hover{
+    transform:rotate(180deg);
+}
+/*Tilts the question two image 270 degrees when hovering*/
+#question2image img:hover{
+    transform:rotate(270deg);
+}
+/*style of radio button labels*/
+label{
+    color: var(--myhoneydew);
+
+}
+
+  
+  /* style of radio button when checked, has black surround. */
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3.5px black;
+}
+.answers{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top:1em;
+   
+}
+.check-button{
+    background-color: var(--myLightBlue);
+    color:var(--myRed);
+    padding: 1em 1em 1em 1em;
+    margin-bottom:2em;
+    /*delays the box shadow appearing on hover by 0.3 seconds and slowly appears with ease*/
+    transition: box-shadow 0.3s ease;
+    font-size: 0.7em;
+}
+/* This makes the black box shadow appear when my check answer buttons are hovered over by the user*/
+.check-button:hover{
+    box-shadow: 10px 10px 6px black;
+
+}
+/* Style of where it tells user if answer is correct or not*/
+#q1-answer-show{
+    color:var(--myhoneydew);
+}
+#q2-answer-show{
+    color:var(--myhoneydew);
+}
+#q3-answer-show{
+    color:var(--myhoneydew);
+}
+
+
+@media screen and (min-width: 850px){
+    /*Moves content more central here , a break point*/
+    main{
+        width:80%;
+    }
+    /* Makes images a lot smaller so easy to look at*/
+    .question-image{
+        max-width: 450px;
+    }
+    
+    
+    
+    
+}
+/* makes text size condsiderably smaller as we are on a wide device*/
+@media screen and (min-width:1200px){
+    .questions{
+        font-size: 1em;
+
+    }
+    #question-explanation{
+        font-size:1em;
+    }
+}

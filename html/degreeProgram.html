@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+	<meta charset="utf-8">
+	<title>Degree Programme</title>
+	<meta name="author" content="George Humberstone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking in style sheets-->
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body id="wrapper">
+  <header  ><!--Logo and navigation in the header-->
+    <!--Figure as its not an inline element where as img on its own is inline, so easier to position picture
+    No caption as its main logo and no alt as purely decorative.-->
+    <figure id="logo"><img src="../images/logo1.jpg" alt="The website logo which includes a picture of George Humberstone with his name" ></figure> 
+    <!-- use nav as it is HTML5 semantic element and I am writing code for navigation of my site here-->
+    <nav id="navigation" class="dropdown">
+      <button  id="touchit" class="my-drop-button " type="button">  &#9776; </button>
+      <ul id="my-dropdown" class="menu-content">
+        <!--My menu links to other pages-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="degreeProgram.html">Degree programme</a></li>
+        <li><a href=degreeQuiz.html >Degree quiz</a></li>
+        <li><a href="myWeek.html">My Week</a></li>
+        <li><a href="contactPage.html">Contact Me</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <script src="../javascript/nav.js"></script>
+      <!--This script is for the menu button so dropdown is displayed I did not want to have to use javascript here, 
+      please see css template for more details-->
+    </nav>
+      
+      
+  </header>
+
+  <h1>My Degree Year One</h1>
+  
+  <!-- The main section of my site comes after the heading -->
+  <main >
+    <!--Course Overview here-->
+    <p class="degree-overview">If have not already realised from the home page, the degree I am studying is a bachelor degree in Computer Science
+      with a year in industry which is a 4 year course. Which means the third year I shall find a work placement. 
+      The course is accredited by the <a href="https://www.bcs.org/">British Computer Society</a>
+      During the degree I will learn to understand theoretical issues of problems and how to implement solutions. Furthermore, I 
+      will learn how to program more and develop my thinking analytically skills alongside developing teamwork and comunication skills.
+      Below I give an overview of the modules that I will study in year one of my degree.
+      
+    </p>
+    <!--Modules overviews start here-->
+    <!--Used h2 as module title/number needs a sub-heading.-->
+    <h2 class="module-title">COM 1001</h2>
+    <!--Used articles throughout here to split the different modules, articles also used so I can change the position of
+     images to put it next to the module information in the desktop/large tablet view-->
+
+    <article class="main-content">
+      <p class="information">
+        This module is a two semester (year) long module that introduces us to Software Engineering concepts
+        that are needed to develop software systems that can meet a set of functional requirements within a problem domain.
+        This is from aquiring the requirements of clients , to implementing a solution and testing that our solution meets 
+        the requirements set out by the client. During the first semester we have had lectures which help us understand this 
+        process and the different ways of working in teams. We have then put this into practice by meeting with our clients
+        (4th year students) online due to the coronavirus pandemic. During meetings we have obtained the requirements of a 
+        solution which we are going to implement next semester. As well as this you learn about a programming language called 
+        ruby which is a nice programming language to use in my personal opinion. This also complements the lectures as you learn
+        how to work in a team to program a solution using remote reposities to share and collaborate work. To test our understanding
+        of programming in ruby there is an individual assignment.
+        
+      </p>
+      <figure class="main-images">
+        <img src="../images/scrum.jpg" alt="Picture of a scrum meeting">
+        <figcaption> A software engineering meeting</figcaption>
+      </figure>
+    </article>
+
+    <h2 class="module-title">COM 1002</h2>
+    <article class="main-content">
+      <p class="information">
+        This module is another year long module. It introduces us to mathematical concepts and techniques that are of great
+        importance in the field of computer science. During the first semester we have looked at propositional logic, set theory
+        , predicate logic, boolean algebra, mathematical functions, relations, proof by induction, proof by contradiction,
+        induction recursion and BNF.
+      </p>
+      <figure class="main-images">
+        <img src="../images/1002.jpg" alt="Picture of work on COM 1002 module">
+        <figcaption>Section of lecture notes on the COM 1002 module</figcaption>
+      </figure>
+    </article>
+
+    <h2 class="module-title">COM 1003</h2>
+    <article class="main-content">
+      <p class="information">
+        This module is a year long. It introduces us to the Java programming language. The aim of this module is to by the
+        end be able to write clear, readable, maintainable programs in java. We should then be able to test these programs 
+        to produce a desired outcome. During semester one we have looked at the following but not limited to programming
+        techniques: Variables and their types, inputs and outputs, manipulation of strings and characters, selection techniques,
+        Enums, arrays and their manipulation, graphics (Image shows example work), Object Oriented Programming, classes, objects, methods, making and using 
+        packages and documenting our programs.
+      </p>
+      <figure class="main-images">
+        <img src="../images/1003Dino.jpg" alt="Picture of dinosaur on a graphics window.">
+        <figcaption>Dinosaur made from characters</figcaption>
+      </figure>
+    </article>
+
+    <h2 class="module-title">COM 1005</h2>
+    <article class="main-content">
+      <p class="information">
+        COM 1005 - Machines and Intelligence is a year long module. In this module we are introduced to the key concepts and
+        problems in Artifical Intelligence. A key problem is whether a machine will actually ever be able to think for itself.
+        We get to evaluate whether the turing test is sufficent enough, if a machine passes it, to claim we can actually call
+        it a thinking machine or not.
+        We discover the moral and ethical issues that are raised by producing such machines. In this module we are introduced
+        to the history of AI and we get to look at the open questions of major sub areas of AI. In this module we have a practical
+        component that intoduces AI problem solving, being able to indentify the abstract nature of problems to be solved. During 
+        the first semester of the module we had experience of programming the Miro-e robot(not the one on the left) more on Miro robot
+        can be found <a href="http://consequentialrobotics.com/">here</a>.
+      </p>
+      <figure class="main-images">
+        <img src="../images/robot.jpg" alt="Picture of a robot">
+        <figcaption>Machines and Intelligence (Robot)</figcaption>
+      </figure>
+    </article>
+
+    <h2 class="module-title">COM 1006</h2>
+    <article class="main-content">
+      <p class="information">
+        COM 1006 - Devices and Networks is an optional year long module on the course. In devices we look at system architectures
+        This invloves: digital logic such as the logic gates (AND,OR,NOT,EXCLUSIVE OR GATES) and then looking at techniques as to how we can simplify circuits
+        that involve a combination of these gates joined together. We also look at sequential logic and circuits. Furthermore, we look at computer arithmetic this includes 
+        looking at looking how to add binary numbers, convert denary numbers to binary and converting to hexadecimal and looking 
+        at floating point. Near to the end of the semester one we look at the structure of the CPU , assembly language programming
+        and instruction structure. In the second semester of the year we will be switching our focus towards networks, how we can connect our
+        devices into a network. We shall also cover the principles of layered protocols and reliable transmission over networks.
+
+      </p>
+      <figure class="main-images">
+        <img src="../images/CPU.jpg" alt="Picture of myself">
+        <figcaption>Devices and Networks (CPU)</figcaption>
+      </figure>
+    </article>
+
+    <h2 class="module-title">COM 1008</h2>
+    <article class="main-content">
+      <p class="information">
+        COM 1008 - Web and internet technology is a one semester long module worth 10 credits. This module covers the basics
+        of technologies that are used in Web development at the front-end such as making websites using programming lanaguages
+        HTML, CSS and JavaScript. Additionally, it emphaises on the need of making a website using mobile-first responsive web design. 
+        Towards the end of the module we look at how to draw graphics on webpages using the canvas or Scalable Vector Graphics. Also near the end
+        of the module we look at networks and information security. Furthermore in this module, we get to look at the history of the internet and web and briefly how it has become possible for the 
+        birth of this technology, which a large part of the world depends upon everyday and much more so during the coronavirus pandemic.
+
+      </p>
+      <figure class="main-images">
+        <img src="../images/1008.jpg" alt="Picture of a section of notes written by George for COM 1008 module">
+        <figcaption>Section of notes of a COM 1008 lecture</figcaption>
+      </figure>
+    </article>
+
+    <h2 class="module-title">COM 1009</h2>
+    <article class="main-content">
+      <p class="information">
+        COM 1009 - Introduction to Algorithms and Data Structures is a one semester long module worth 10 credits. Algorithms play
+        a huge part in Computer Science. This module introduces design and analysis of efficient algorithms and data structures. We will 
+        look what algorithmic solutions are efficent and measure the efficiency of different algorithms. We will look at how to design these
+        efficent algorithms. We will also look at efficient data structures for storing and retrieving data. We will look at fundamental problems
+        such as searching, sorting, graph algorithms and combinatorial problems such as finding the shortest paths in networks.
+
+      </p>
+      <figure class="main-images">
+        <img src="../images/com1009.jpg" alt="Picture of a section of notes written by George for COM 1008 module">
+        <figcaption>Algorithms and Data Structures</figcaption>
+      </figure>
+    </article>
+    <h2 class="module-title">More Information</h2>
+    <P class="degree-overview">If you want more information than what I have provided here then please visit the following pages.</P>
+      <!--Unordered list to list the additonal links the user may find helpful.-->
+      <ul id="external-links">
+        <li><a class="useful-links" href="https://www.sheffield.ac.uk/">The University Of Sheffield Home page</a></li>
+        <li><a class="useful-links" href="https://www.sheffield.ac.uk/undergraduate/courses/2021/computer-science-year-industry-bsc">Further details about the course I study</a></li>
+        <li><a class="useful-links" href="https://www.sheffield.ac.uk/dcs">The Department Of Computer Science Home page</a></li>
+      </ul>
+    
+
+    
+    
+    
+        
+    
+    
+  </main>
+	 
+	<footer>
+    <p>&copy; George Humberstone 2020</p>
+	</footer>
+	
+	
+</body>
+</html>

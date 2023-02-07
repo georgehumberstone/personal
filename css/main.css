@@ -1,0 +1,195 @@
+/*This code has been written by George Humberstone*/
+/*these are mh colours from the colour palette I chose when designing my website*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root{
+    --myRed:#e63946;
+    --myMiddleBlue: #457B9D;
+    --myDarkBlue:#1D3557;
+    --myLightBlue:#A8DADC;
+    --myhoneydew: #f1faee;
+}
+/*shared css for pages*/
+main{
+    width:98%;
+    margin: 0em auto 0em auto;
+    font-family:https://fonts.googleapis.com/css?family=Open+Sans&display=swap;
+}
+/* about me and hobby style and titles of modules*/
+h2{
+    width:4.5em;
+    background-color:var(--myRed) ;
+    color:var(--myhoneydew);
+    margin:0em 0em 0em 0.5em;
+    font-size: 2.5em;
+    padding:0.2em 0.5em 0.2em 0.5em;
+    /*To round off the edges of its border*/
+    border-radius: 0.2em;
+    text-align: center;
+   
+
+
+}
+p{
+    font-size:1.2em;
+    margin:2em 1em 0em 1em;
+    color: var(--myhoneydew);
+    padding:0.5em;
+    background-color:var(--myMiddleBlue) ;
+    border-radius: 2px;
+}
+/* Make sure the link is in same colour text*/
+p a {
+    color:var(--myhoneydew);
+}
+footer p{
+    font-size:1.0em;
+    margin:3em 0em 0em 0em;
+    
+    padding:0em 0em 0em 0em;
+}
+
+/*getting these figures central and there caption central, making sure they cover most of the page*/
+.main-images{
+    width:95%;
+    text-align: center;
+    margin: 2em auto 0px auto;
+    color:var(--myhoneydew)
+}
+.main-images img{
+    max-width:100% ;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+/*Home page only rules*/
+
+#home-page-main{
+    display:flex;
+    /*This will display the page in a column so aside follows the section*/
+	flex-direction: column;
+}
+/*leaves a gap to seperate it from previous paragraph*/
+aside h2{
+    margin-top: 1em ;
+}
+.main-content{
+    display:flex;
+    /*This will display the page in a column so images follows the paragraph underneath*/
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* degree program page rules only*/
+
+.module-title{
+    width:4.7em;
+    margin:1.5em auto 0em auto;
+}
+
+.useful-links{
+    color:var(--myhoneydew);
+    font-size:1.2em ;
+    
+}
+
+
+
+
+
+
+@media screen and (min-width: 850px){
+    /*Moves content more central here , a tweak point*/
+    main{
+        width:85%;
+    }
+    /* Makes images a lot smaller so easy to look at*/
+    .main-images{
+        max-width: 350px;
+    }
+    
+    
+    
+    
+}
+@media screen and (min-width: 1000px){/*tweak a little*/
+    p{
+        font-size:1.1em;
+    }
+}
+/* A break point as moved to width of a large landscape tablet*/
+@media screen and (min-width: 1200px){
+    /*shared rules for home and degree program page*/
+    p{
+        font-size:1em;
+    }
+    /*rules for just home page*/
+    
+    #home-page-main{
+        /*so the aside is now placed on the right side of the page*/
+		flex-direction:row;
+	}
+	#main-home-section{
+		width:60%;
+    }
+    main aside{
+        width:40%;
+        /* To leave a gap between the section and the aside*/
+		padding-left:10%;
+	}
+	aside.main-images img{
+		width:100%;
+		margin:0em;
+		padding: 0%;
+        font-size: 0.1rem;
+        float: left;
+        
+        
+    }
+    aside p{
+        width:70%;
+        /*align central*/
+        margin:0em auto 0em auto;
+        
+    }
+    /*change the header in the aside to look different as before it looked same as the "About Me" header but now I
+      want it to look different as it is now appearing on the right of my page*/
+    aside h2{
+        margin:2.3em auto 0.5em auto;
+        padding:0.7em 0em 0.7em 0em;
+        
+    }
+    /*rules for my degree program page*/
+    .degree-overview{
+        width:83%;
+        margin: 0.5em auto 0em auto;
+    }
+    
+    .main-content{
+        /* To centre all the information about the modules*/
+        width:85%;
+        /*show the elements in the article in a row instead of column so images display to right side of the article*/
+        flex-direction:row;
+        
+    }
+    
+    /* To leave a gap between images on the page and the paragraph of text next to it*/
+    .main-content figure{
+        padding-left:5%;
+        
+        
+    }
+    /* to size the width of the paragraphs that show the module information*/
+    .information{
+        width: 70%;
+    }
+    #external-links{
+        
+        margin: 0.5em 4em 0em 5em;
+    }
+    
+	
+    
+    
+}

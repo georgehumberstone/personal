@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+	<meta charset="utf-8">
+	<title>My Week</title>
+	<meta name="author" content="George Humberstone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking in style sheets-->
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/myWeek.css">
+</head>
+<body id="wrapper">
+  <header  ><!--Logo and navigation in the header-->
+    <!--Figure as its not an inline element where as img on its own is inline, so easier to position picture
+    No caption as its main logo and no alt as purely decorative.-->
+    <figure id="logo"><img src="../images/logo1.jpg" alt="The website logo which includes a picture of George Humberstone with his name" ></figure> 
+    <!-- use nav as it is HTML5 semantic element and I am writing code for navigation of my site here-->
+    <nav id="navigation" class="dropdown">
+      <button  id="touchit" class="my-drop-button " type="button">  &#9776; </button>
+      <ul id="my-dropdown" class="menu-content">
+        <!--My menu links to other pages-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="degreeProgram.html">Degree programme</a></li>
+        <li><a href=degreeQuiz.html >Degree quiz</a></li>
+        <li><a href="myWeek.html">My Week</a></li>
+        <li><a href="contactPage.html">Contact Me</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <script src="../javascript/nav.js"></script>
+      <!--This script is for the menu button so dropdown is displayed I did not want to have to use javascript here, 
+      please see css in template file for more details-->
+    </nav>
+      
+      
+  </header>
+
+  <h1>My Week</h1>
+  
+  <!-- The main section of my site comes after the heading -->
+  <main>
+    <h2><u>The table below is the data for hours spent on three different activities throughout one week.</u> </h2>
+    <table >
+      <tr>
+        <th></th>
+        <!--Table headers make text bold-->
+        <th>On Phone</th>
+        <th>University Work</th>
+        <th>Watching Tv</th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <td>3</td>
+        <td>9</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td>2</td>
+        <td>9</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>1</td>
+        <td>8</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td>3</td>
+        <td>7</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td>2</td>
+        <td>8</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td>3</td>
+        <td>8</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>Sunday</th>
+        <td>2</td>
+        <td>8</td>
+        <td>4</td>
+      </tr>
+
+    </table>
+    <p>Click resize for my graphs to adjust to your device.</p>
+    <div>
+      <button id="resize-button">Resize</button>
+      <button id="setone">colour set 1</button>
+      <button id="settwo">colour set 2</button>
+      <button id="setthree">colour set 3</button>
+    </div>
+    <!--The canvas-->
+    <canvas id="my-data" width="300" height="300">
+
+    </canvas>
+    <!--Script loads after canvas is put on screen.-->
+    <script src="../javascript/data.js"></script>
+
+    
+  </main>
+
+	<footer>
+    <p>&copy; George Humberstone 2020</p>
+  </footer>
+  
+</body>
+</html>
