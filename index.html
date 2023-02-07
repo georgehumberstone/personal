@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<meta name="author" content="George Humberstone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking in style sheets-->
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body id="wrapper">
+  <header  ><!--Logo and navigation in the header-->
+    <!--Figure as its not an inline element so easier to position picture
+    No caption as its main logo and no alt as purely decorative.-->
+    <figure id="logo"><img src="../images/logo1.jpg" alt="The website logo which includes a picture of George Humberstone with his name" ></figure> 
+    <nav id="navigation" class="dropdown">
+      <button  id="touchit" class="my-drop-button " type="button">  &#9776; </button>
+      <ul id="my-dropdown" class="menu-content">
+        <!--My menu links to other pages-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="degreeProgram.html">Degree programme</a></li>
+        <li><a href=degreeQuiz.html >Degree quiz</a></li>
+        <li><a href="myWeek.html">My Week</a></li>
+        <li><a href="contactPage.html">Contact Me</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <script src="../javascript/nav.js"></script>
+      <!--This script is for the menu button so dropdown is displayed I did not want to have to use javascript here, 
+      please see css for more details-->
+    </nav>
+      
+      
+  </header>
+
+  <h1>Welcome!</h1>
+  <!-- The main section of my site comes after the heading -->
+  <main id="home-page-main">
+    <!--Used a section and aside combination here as main information will be in the section and further details 
+      about me in the aside such as hobby, I will change the position of both as width increases.-->
+    <section id="main-home-section">
+      <h2>About Me</h2>
+      <p >Hello!  I am a first year undergraduate student studying Computer Science at The
+           University Of Sheffield. I have previous education of Computer Science which includes studying the subject at GCSE level 
+           and as an A Level. I throughly enjoy Computer Science and wish to share with your some of my experiences so far while 
+           studying the subject at university.
+      </p>
+      <figure class="main-images">
+        <img src="../images/me.jpg" alt="Picture of myself">
+        <figcaption>Me (George)</figcaption>
+      </figure>
+      <p>To find out more information about the degree I am studying please visit the <a href="degreeProgram.html">degree program page.</a></p>
+    </section>
+        
+    <aside > 
+      <h2 > Hobby</h2>
+      <p>In my own time which is mostly at weekends and when coronavirus restrictions are not in place as they are at the time of writing this
+         (tier 3 / lockdown &#9785;) I usually meet up with family and friends and go watch Sheffield United who I have 
+         supported since being young. Being a supporter of Sheffield united has given me many highs and lows. The best part of 
+         supporting them is that all supporters stick together through the lows. Being a season ticket holder allows me to make new friends
+         as new season starts sometimes you can be sat around people who you have never met before. Lately watching games means being fixed 
+         to a tv screen during the matches and seeing no friends or making new friends. 
+         I will never forget the announcement made on my 18th birthday in 2020, that football matches were to be suspended. 
+         A birthday rememberable for the wrong reasons not only because of coronavirus. </p>
+      <figure class="main-images">
+        <img src="../images/football1.jpg" alt="An image of a lonely football on a football field">
+        <figcaption> I miss watching football</figcaption>
+      </figure>
+    </aside>
+    
+  </main>
+	 
+	<footer>
+    <p>&copy; George Humberstone 2020</p>
+	</footer>
+	
+	
+</body>
+</html>
